@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("back.jpg")  center/cover;
+}
+
+
+#flexs{
+    display: flex;
+    width: 260px;
+    flex-direction: column;
+}
+
+#bar{
+  background-color: hsl(0, 1%, 24%);
+  height: 10px;
+  width: 260px;
+ 
+}
+#main {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 250px 42%; */
+}
+
+#disp {
+  background-color: white;
+  font-size: 30px;
+  font-weight: bold;
+  height: 65px;
+  resize: none;
+  width: 257.5px;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 275px;
+  margin-top: -4px;
+  width: 199px;
+}
+
+.item {
+  /* border: 5px solid black; */
+
+  padding: 22px 28px;
+  background-color: hsl(0, 1%, 24%);
+  color: white;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.3rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 270px){
+  .grid {
+   
+    height: 275px;
+    margin-top: -4px;
+    width: 150px;
+  }
+  #main{
+    margin-left: 8px;
+   
+  }
+  .item{
+    padding: 19px 25px;
+  }
+  #disp {
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    height: 65px;
+    resize: none;
+    width: 233.5px;
+  }
+  #bar{
+    background-color: hsl(0, 1%, 24%);
+    height: 10px;
+    width: 233.5px;
+   
+  }
+  
+  
+
+}
